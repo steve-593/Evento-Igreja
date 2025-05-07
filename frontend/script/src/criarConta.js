@@ -1,0 +1,24 @@
+import pg from 'pg';
+import dotenv from 'dotenv';
+const { Client } = pg
+dotenv.config()
+
+class CriarConta {
+    constructor(nomeCompleto, senha) {
+        this.nomeCompleto = nomeCompleto;
+        this.senha = senha;
+    }
+
+    enviarParaBancoDeDados(nomeCompleto, senha) {
+
+    }
+}
+
+document.getElementById('botaoCriarConta').onclick = () => {
+    const nomeCompleto = document.getElementById('nomeCompleto');
+    const senha = document.getElementById('senha');
+
+    let t = new CriarConta('testeNome', 'testeSenha');
+}
+
+
