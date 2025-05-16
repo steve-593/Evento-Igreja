@@ -1,6 +1,6 @@
 import pg from 'pg';
 import dotenv from 'dotenv';
-const { Client } = pg
+const { Client } = pg;
 dotenv.config()
 
 class CriarConta {
@@ -15,8 +15,8 @@ class CriarConta {
 }
 
 document.getElementById('botaoCriarConta').onclick = () => {
-    const nomeCompleto = document.getElementById('nomeCompleto');
-    const senha = document.getElementById('senha');
+    const nomeCompleto = document.getElementById('nomeCompleto').value;
+    const senha = document.getElementById('senha').value;
 
     let t = new CriarConta('testeNome', 'testeSenha');
 }
