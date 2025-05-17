@@ -1,7 +1,6 @@
-import pg from 'pg';
 import dotenv from 'dotenv';
 const { Client } = pg;
-dotenv.config()
+dotenv.config();
 
 class CriarConta {
     constructor(nomeCompleto, senha) {
